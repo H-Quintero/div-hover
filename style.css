@@ -1,0 +1,74 @@
+.box {
+  width: 70%;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fabada;
+}
+
+.title {
+  font-size: small;
+}
+
+@media (min-width: 480px) {
+  .box {
+    flex-direction: row;
+    flex: 1;
+  }
+}
+
+.item {
+  padding: 10px;
+
+  transition: 0.2s;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;  
+
+  background-position: center;
+  background-size: cover;
+}
+
+.invierno {
+  background-image: url(./img/invierno.webp);
+}
+
+.primavera {
+  background-image: url(./img/primavera.jpg);
+}
+
+.verano {
+  background-image: url(./img/verano.jpg);
+}
+
+.otoño {
+  background-image: url(./img/otoño.jpg);
+}
+
+
+
+@media (min-width: 480px) {
+  .item {
+    width: 50px;
+  
+  }
+}
+
+.item:hover {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 480px) {
+  .item:hover {
+    flex: 4;
+    height: initial;
+    
+  }
+}
